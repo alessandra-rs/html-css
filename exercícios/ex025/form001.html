@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro Formulário</h1>
+    <form action="cadastro.php" autocomplete="off"> 
+    <!--autocomplete > Sugere os dados para por
+    action > Envia os dados para um script de uma linguagem de programação-->
+
+        <p><label for="inome">Nome: </label>
+            <input type="text" name="nome" id="inome"></p>
+        <!--Utilizar a tag <label> p/ criar uma ligação entre o que pede p/ ser preenchido com o campo de dados. No for="nome do ID"-->
+        <p><label for="isobrenome">Sobrenome: </label>
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>
