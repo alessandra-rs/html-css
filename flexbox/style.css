@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* O DISPLAY FLEX PODE SER UTILIZADO NOS PRÓPRIOS
+FILHOS(ITEMS) DO CONTAINER */
+
+div.flex-container {
+    height: 50vh;
+    background-color: rgb(253, 253, 84);
+    display: flex;
+
+    /* Direção do Main Axis*/
+    flex-direction: row; 
+
+    /* Alinha os Itens no Main Start, End, center... */
+    justify-content: flex-start;
+
+    /* Alinha os Itens no Topo, Em baixo, centro... */
+    align-items: center; 
+
+    /* Quebra de linha */
+    flex-wrap: wrap;
+
+    /* Junta o direction com wrap */
+    flex-flow: row wrap;
+
+    /* Alinha as linhas */
+    align-content: center;
+
+    /* Espaçamento entre os Itens */
+    gap: 30px;
+    padding: 30px;
+}
+
+div.flex-item {
+    background-color: pink;
+}
+
+div.flex-item:nth-child(1) {
+    /* Número da oredem de um filho */
+    order: 1;
+
+    /* Distribui o espaçamento que sobou do Container 
+    p/ o filho */
+    flex-grow: 1;
+
+    /* Mesma função do Grow, mas para diminuir esse
+    espaçamento */
+    flex-shrink: 1;
+
+    /* Tamanho do widht inicial pode ser em PX ou % */
+    flex-basis: 100%;
+}
+
+div.flex-item:nth-child(2) {
+    order: 2;
+
+    /* SHORTHAND P/ AS 3 PROPEIEDADES ACIMA */
+    flex: 1 1 100%;
+}
+
+div.flex-item:nth-child(3) {
+    order: 3;
+
+    /* OU PODE DEIXAR TUDO EM VALOR 1 */
+    flex: 1;
+}
+
+div.flex-item:nth-child(4) {
+    order: 4;
+}
+
+div.flex-item:nth-child(5) {
+    order: 5;
+}
+
+div.flex-item:nth-child(6) {
+    order: 6;
+}
