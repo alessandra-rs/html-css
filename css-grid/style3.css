@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(4, 50px);
+
+    /* Para centralizar a grid */
+    justify-content: center;
+    align-items: center;
+
+    /* Alinha o conteúdo no meio */
+    align-content: center;
+
+    justify-items: center;
+
+    gap: 10px;
+    height: 100vh;
+    width: 100vw;
+}
+
+.item {
+    background-color: pink;
+}
+
+.item-8 {
+    /* Alinha apenas esse item */
+    align-self: end;
+    justify-self: start;
+}

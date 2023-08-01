@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+/* PARA POSICIONAR OS ELEMENTOS USANDO GRID-AREA */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "i1 i3"
+        "i2 i3"
+        "i4 i3"
+        ;
+    grid-template-columns: 1fr 200px;
+    grid-template-rows: 50px 1fr 70px;
+    width: 100vw;
+    height: 100vh;
+}
+
+.item {
+    background-color: pink;
+}
+
+.item-1 {
+    grid-area: i1;
+    background-color: lightblue;
+}
+
+.item-2 {
+    grid-area: i2;
+    background-color: lightsalmon;
+}
+
+.item-3 {
+    grid-area: i3;
+    background-color: lightcoral;
+}
+
+.item-4 {
+    grid-area: i4;
+    background-color: lightgreen;
+}
